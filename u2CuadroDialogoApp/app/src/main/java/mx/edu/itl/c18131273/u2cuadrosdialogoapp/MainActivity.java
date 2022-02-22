@@ -1,3 +1,35 @@
+/*------------------------------------------------------------------------------------------
+:*                         TECNOLOGICO NACIONAL DE MEXICO
+:*                                CAMPUS LA LAGUNA
+:*                     INGENIERIA EN SISTEMAS COMPUTACIONALES
+:*                             DESARROLLO EN ANDROID "A"
+:*
+:*                   SEMESTRE: ENE-JUN/2022    HORA: 10-11 HRS
+:*
+:*      Clase que despliega distintos cuadros de mensaje y dialogo basicos
+:*
+:*  Archivo     : MainActivity.java
+:*  Autor       : Jose angel rocha garcia     18131273
+:*  Fecha       : 22/Feb/2022
+:*  Compilador  : Android Studio Bumblebee 2021.1.1
+:*  Descripci�n : Los dialogos de alerta que se despliegan son los siguientes:
+                    Toast de duracion corta
+                    Toast de duracion larga
+                    SnackBar
+                    Cuadro de dialogo basico
+                    Dialogo basico con boton OK
+                    Dialogo basico con boton Ok y Cancel
+                    Dialogo con botones de radio seleccion unica
+                    Dialogo con botones casillas de verificacion seleccion multiple
+                    Dialogo con layout de login incrustado
+                    Acerca de
+
+:*  Ultima modif:
+:*  Fecha       Modific�             Motivo
+:*==========================================================================================
+:*  
+:*------------------------------------------------------------------------------------------*/
+
 package mx.edu.itl.c18131273.u2cuadrosdialogoapp;
 
 import androidx.appcompat.app.AlertDialog;
