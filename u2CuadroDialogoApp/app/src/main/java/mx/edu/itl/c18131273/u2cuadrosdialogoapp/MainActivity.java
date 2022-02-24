@@ -27,7 +27,7 @@
 :*  Ultima modif:
 :*  Fecha       Modific�             Motivo
 :*==========================================================================================
-:*  
+:*
 :*------------------------------------------------------------------------------------------*/
 
 package mx.edu.itl.c18131273.u2cuadrosdialogoapp;
@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnDialogoLayoutIncrustado(View v){
         //Obtener instancia del layout de login y sus campos usuario y contraseña
-        login_layout = getLayoutInflater().inflate(R.layout.logotec, null);
+        login_layout = getLayoutInflater().inflate(R.layout.login_layout, null);
         edtUsuario = login_layout.findViewById(R.id.edtUsuario);
         edtContrasena = login_layout.findViewById(R.id.edtcontrasena);
 
