@@ -10,13 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.U2Banderita1Lay1ActApp">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name="mx.edu.itl.c18131273.u2banderita1lay1actapp.SplashActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name="mx.edu.itl.c18131273.u2banderita1lay1actapp.MainActivity"
+            android:exported="false">
         </activity>
     </application>
 
