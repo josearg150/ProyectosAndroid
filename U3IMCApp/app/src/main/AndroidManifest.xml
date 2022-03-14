@@ -10,20 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.U3IMCApp">
         <activity
-            android:name="mx.edu.itl.c18131273.u3imcapp.SplashActivity"
-            android:exported="true" >
+            android:name=".acercaDe"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name="mx.edu.itl.c18131273.u3imcapp.MainActivity"
-            android:exported="false" >
-
-        </activity>
+            android:name=".MainActivity"
+            android:exported="false"></activity>
     </application>
 
 </manifest>

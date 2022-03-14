@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -60,5 +61,10 @@ public class MainActivity extends AppCompatActivity {
                 })
                 .create()
                 .show();
+    }
+
+    public void acercaDe(View v){
+        Intent intent = new Intent(this, acercaDe.class);
+        startActivity(intent);
     }
 }
