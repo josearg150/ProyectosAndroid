@@ -27,6 +27,18 @@ public class MainActivity extends AppCompatActivity {
     public void btnCalcularIMCClick (View v){
         float peso = Float.parseFloat(edtPeso.getText().toString());
         float estatura = Float.parseFloat(edtEstatura.getText().toString());
+        //Validar que el peso y la estatura no sea 0
+        if (peso <= 0){
+            edtPeso.setError("El peso debe ser mayor de cero");
+            edtPeso.requestFocus();
+            return;
+        }
+
+        if( estatura <= 0){
+            edtEstatura.setError("La estatura debe ser mayor que cero");
+            edtEstatura.requestFocus();
+            return;
+        }
 
         float imc = (float)(peso / Math.pow(estatura, 2));
 
