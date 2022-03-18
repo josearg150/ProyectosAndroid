@@ -1,0 +1,22 @@
+<resources>
+    <!--activity_acercaDe.xml-->
+    <string name="app_name">U3IMCStringsApp</string>
+    <string name="institucion">TECNOLOGICO NACIONAL DE MEXICO</string>
+    <string name="campus">CAMPUS LA LAGUNA</string>
+    <string name="carrera">Ingenieria en Sistemas Computacionales</string>
+    <string name="materia">Desarrollo en android</string>
+    <string name="semestre">Ene-Jun/2022</string>
+    <string name="grupo">Grupo: A 10-11Hrs</string>
+    <string name="leyenda_alumno">Alumno:</string>
+    <string name="alumno_nombre">Jose Angel Rocha Garcia (18131273)</string>
+    <string name="derechos_reservados">(C) Derechos reservados. Torreón, Coah. México. 2022</string>
+    <!--activity_main.xml-->
+    <string name="IMCLeyenda">Indice de masa corporal</string>
+    <string name="peso">Peso(Kg)</string>
+    <string name="estatura">Estatura(m)</string>
+    <string name="btnCalcularImc">Calcular IMC</string>
+    <string name="btnAcercaDe">Acerca de</string>
+    <!--MainActivity.java-->
+    <string name="errorPeso">El peso debe ser mayor de cero</string>
+
+</resources>
