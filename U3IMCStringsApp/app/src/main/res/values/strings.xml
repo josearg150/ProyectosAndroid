@@ -1,11 +1,11 @@
 <resources>
     <!--activity_acercaDe.xml-->
-    <string name="app_name">U3IMCStringsApp</string>
+    <string name="app_name">U3IMCApp</string>
     <string name="institucion">TECNOLOGICO NACIONAL DE MEXICO</string>
     <string name="campus">CAMPUS LA LAGUNA</string>
     <string name="carrera">Ingenieria en Sistemas Computacionales</string>
     <string name="materia">Desarrollo en android</string>
-    <string name="semestre">Ene-Jun/2022</string>
+    <string name="semestre">Semestre: Ene-Jun/2022</string>
     <string name="grupo">Grupo: A 10-11Hrs</string>
     <string name="leyenda_alumno">Alumno:</string>
     <string name="alumno_nombre">Jose Angel Rocha Garcia (18131273)</string>
@@ -18,5 +18,17 @@
     <string name="btnAcercaDe">Acerca de</string>
     <!--MainActivity.java-->
     <string name="errorPeso">El peso debe ser mayor de cero</string>
+    <string name="errorEstatura">La estatura debe ser mayor que cero</string>
+    <string name="condicionMensaje">Su condicion de salud es: </string>
+    <string name="delgadezMuySevera">Delgadez muy severa</string>
+    <string name="delgadezSevera">Delgadez severa</string>
+    <string name="delgadez">Delgadez</string>
+    <string name="normal">Peso saludable</string>
+    <string name="sobrepeso">Sobrepeso</string>
+    <string name="obesidadM">"Obesidad moderada"</string>
+    <string name="obesidadS">"Obesidad severa"</string>
+    <string name="obesidadMS">Obesidad muy severa</string>
+    <string name="IMC">IMC</string>
+    <string name="Aceptar">Aceptar</string>
 
 </resources>

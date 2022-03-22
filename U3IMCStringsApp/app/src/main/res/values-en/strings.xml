@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">U3IMCApp</string>
+    <string name="institucion">National Technological of Mexico</string>
+    <string name="campus">CAMPUS LA LAGUNA</string>
+    <string name="carrera">Computer systems engineering</string>
+    <string name="materia">Android development</string>
+    <string name="semestre">Semester: Jan.Jun /2022</string>
+    <string name="grupo">Group A 10-11Hrs</string>
+    <string name="leyenda_alumno">Student</string>
+    <string name="alumno_nombre">Jose Angel Rocha Garcia (18131273)</string>
+    <string name="Aceptar">Acept</string>
+    <string name="btnAcercaDe">About</string>
+    <string name="estatura">Height(m)</string>
+    <string name="peso">Weight(Kg)</string>
+    <string name="IMCLeyenda">Body mass index</string>
+    <string name="btnCalcularImc">Calculate BMI</string>
+    <string name="errorEstatura">Height must be greater than zero</string>
+    <string name="errorPeso">Weight must be grater than zero</string>
+    <string name="condicionMensaje">"Your health condition is: "</string>
+    <string name="derechos_reservados">(C) Copyright. Torreón. Coah. México. 2022</string>
+    <string name="IMC">BMI</string>
+    <string name="delgadez">Thinness</string>
+    <string name="delgadezSevera">Severe thinness</string>
+    <string name="delgadezMuySevera">Very severe thiness</string>
+    <string name="sobrepeso">Overweight</string>
+    <string name="normal">healthy weight</string>
+    <string name="obesidadS">Severe obesity</string>
+    <string name="obesidadMS">Very severe obesity</string>
+    <string name="obesidadM">Moderate obesity</string>
+</resources>
