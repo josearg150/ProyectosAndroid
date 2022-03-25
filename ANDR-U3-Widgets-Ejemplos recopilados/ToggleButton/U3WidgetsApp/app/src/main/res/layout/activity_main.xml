@@ -129,7 +129,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:layout_weight="0.5"
-                            android:backgroundTint="@color/teal_700"
                             android:onClick="btnMultiLineTextClick"
                             android:text="Multiline Text"
                             android:textSize="10sp" />
@@ -153,7 +152,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
                             android:layout_weight="0.5"
-                            android:backgroundTint="@color/teal_700"
                             android:onClick="btnMultiAutoCompleteTextViewClick"
                             android:text="MultiAutoCompleteTextView"
                             android:textSize="9sp" />
@@ -163,7 +161,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:layout_weight="0.5"
-                            android:backgroundTint="@color/teal_700"
                             android:onClick="btnImageButtonClick"
                             android:text="ImageButton"
                             android:textSize="10sp" />
@@ -186,7 +183,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
                             android:layout_weight="0.5"
-                            android:backgroundTint="@color/teal_700"
                             android:onClick="btnChipClick"
                             android:text="Chip y ChipGroup"
                             android:textSize="10sp" />
@@ -196,9 +192,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:layout_weight="0.5"
-                            android:backgroundTint="@color/teal_700"
                             android:onClick="btnToggleButtonClick"
                             android:text="ToggleButton"
+                            android:backgroundTint="@color/teal_700"
                             android:textSize="10sp" />
                     </LinearLayout>
                 </TableRow>

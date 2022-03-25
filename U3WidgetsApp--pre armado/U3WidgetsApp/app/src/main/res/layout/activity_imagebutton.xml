@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="5dp"
-    tools:context=".actividades.MainActivity">
+    tools:context=".actividades.ImageButtonActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -129,7 +129,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:layout_weight="0.5"
-                            android:backgroundTint="@color/teal_700"
                             android:onClick="btnMultiLineTextClick"
                             android:text="Multiline Text"
                             android:textSize="10sp" />
@@ -153,7 +152,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
                             android:layout_weight="0.5"
-                            android:backgroundTint="@color/teal_700"
                             android:onClick="btnMultiAutoCompleteTextViewClick"
                             android:text="MultiAutoCompleteTextView"
                             android:textSize="9sp" />
@@ -163,7 +161,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:layout_weight="0.5"
-                            android:backgroundTint="@color/teal_700"
                             android:onClick="btnImageButtonClick"
                             android:text="ImageButton"
                             android:textSize="10sp" />
@@ -186,7 +183,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
                             android:layout_weight="0.5"
-                            android:backgroundTint="@color/teal_700"
                             android:onClick="btnChipClick"
                             android:text="Chip y ChipGroup"
                             android:textSize="10sp" />
@@ -196,7 +192,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:layout_weight="0.5"
-                            android:backgroundTint="@color/teal_700"
                             android:onClick="btnToggleButtonClick"
                             android:text="ToggleButton"
                             android:textSize="10sp" />
@@ -393,4 +388,4 @@
         </LinearLayout>
     </ScrollView>
 
-</LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
 
-public class MainActivity extends AppCompatActivity {
+public class ImageButtonActivity extends AppCompatActivity {
 
     //----------------------------------------------------------------------------------------------
     @Override
@@ -44,28 +44,28 @@ public class MainActivity extends AppCompatActivity {
     }
     //----------------------------------------------------------------------------------------------
     public void btnMultiLineTextClick ( View v ) {
-        Intent intent = new Intent ( this, MultiLineTextActivity.class );
-        startActivity ( intent );
+//        Intent intent = new Intent ( this, MultiLineTextActivity.class );
+//        startActivity ( intent );
     }
     //----------------------------------------------------------------------------------------------
     public void  btnMultiAutoCompleteTextViewClick ( View v ) {
-        Intent intent = new Intent ( this, MultiAutoCompleteTextViewActivity.class );
-        startActivity ( intent );
+//        Intent intent = new Intent ( this, MultiAutoCompleteTextViewActivity.class );
+//        startActivity ( intent );
     }
     //----------------------------------------------------------------------------------------------
     public void  btnImageButtonClick ( View v ) {
-        Intent intent = new Intent ( this, ImageButtonActivity.class );
-        startActivity ( intent );
+//        Intent intent = new Intent ( this, ImageButtonActivity.class );
+//        startActivity ( intent );
     }
     //----------------------------------------------------------------------------------------------
     public void  btnChipClick ( View v ) {
-        Intent intent = new Intent ( this, ChipActivity.class );
-        startActivity ( intent );
+//        Intent intent = new Intent ( this, ChipActivity.class );
+//        startActivity ( intent );
     }
     //----------------------------------------------------------------------------------------------
     public void  btnToggleButtonClick ( View v ) {
-        Intent intent = new Intent ( this, ToggleButtonActivity.class );
-        startActivity ( intent );
+//        Intent intent = new Intent ( this, ToggleButtonActivity.class );
+//        startActivity ( intent );
     }
     //----------------------------------------------------------------------------------------------
     public void  btnSwitchClick ( View v ) {

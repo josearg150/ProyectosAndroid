@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="mx.edu.itl.c85360673.u9widgetsapp">
+    package="mx.edu.itl.c85360673.u9widgetsapp" >
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.U9WidgetsApp">
+        android:theme="@style/Theme.U9WidgetsApp" >
+        <activity
+            android:name=".actividades.ToggleButtonActivity"
+            android:exported="true" />
         <activity
             android:name=".actividades.AutoCompleteTextViewActivity"
             android:exported="true" />
@@ -20,7 +23,7 @@
             android:exported="true" />
         <activity
             android:name=".actividades.MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,14 +36,6 @@
         <activity
             android:name=".actividades.CheckBoxActivity"
             android:exported="true" />
-        <activity android:name=".actividades.MultiLineTextActivity"
-            android:exported="true"/>
-        <activity android:name=".actividades.MultiAutoCompleteTextViewActivity"
-            android:exported="true"/>
-        <activity android:name=".actividades.ImageButtonActivity"
-            android:exported="true"/>
-        <activity android:name=".actividades.ChipActivity"
-            android:exported="true"/>
     </application>
 
 </manifest>
