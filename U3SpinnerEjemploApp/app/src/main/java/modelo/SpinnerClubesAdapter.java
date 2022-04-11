@@ -40,8 +40,20 @@ public class SpinnerClubesAdapter extends ArrayAdapter<Club> {
     private View inicializarView ( int position, @Nullable View convertView, @NonNull ViewGroup parent ) {
         // Configurar el View llamado convertView para inflar  spinner_fila_imagen_texto  y
         // establecer la imagen del logo del club y el nombre del club en el layout.
+        if (convertView == null) {
+            convertView = LayoutInflater.from ( getContext () )
+                    .inflate ( R.layout.spinner_fila_imagen_texto, parent,false );
+            // Se obtienen las referencias a los widgets del layout
+            ImageView escudo = convertView.findViewById ( R.id. imgvEscudo ) ;
+            TextView nombre = convertView.findViewById ( R.id. txtvNombre );
 
+            // Obtenemos el objeto club correspondiente a position
+            Club club = getItem ( position );
 
+            // Establecemos los valores del club en los vidgets
+            escudo.setImageResource ( club.getEscudoID ( ));
+            nombre.setText ( club.getNombre () );
+        }
         return convertView;
     }
 

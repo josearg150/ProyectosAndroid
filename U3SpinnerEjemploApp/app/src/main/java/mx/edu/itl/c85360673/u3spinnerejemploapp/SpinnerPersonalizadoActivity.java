@@ -29,23 +29,30 @@ public class SpinnerPersonalizadoActivity extends AppCompatActivity {
         inicializarClubes ();
 
         // Crear el adapter del tipo SpinnerClubesAdapter y establecer el layout con  setDropDownViewResource ()
-
+        SpinnerClubesAdapter adaptador = new SpinnerClubesAdapter(this, clubes );
+        adaptador.setDropDownViewResource ( android.R.layout.simple_spinner_dropdown_item );
 
         // Establecer el adaptador para el spinner
-
+        spnClubes.setAdapter ( adaptador );
     }
 
     //----------------------------------------------------------------------------------------------
 
     private void inicializarClubes () {
-        clubes = new ArrayList<> ( );
+        clubes = new ArrayList<>();
         // Agregar elementos al ArrayList
+        clubes.add(new Club("Barcelona FC", R.drawable.club_barcelona));
+        clubes.add(new Club("Bayern Munich", R.drawable.club_bayern));
+        clubes.add(new Club("Chelsea", R.drawable.club_chelsea));
+        clubes.add(new Club("Dinamo Kiev", R.drawable.club_dinamokiev));
+        clubes.add(new Club("Zagreb", R.drawable.club_zagreb));
     }
 
     //----------------------------------------------------------------------------------------------
 
     public  void btnAceptarClick ( View v ) {
          // Recuperar el elemento seleccionado del Spinner y mostrar el nombre del club en un Toast
+        Toast.makeText ( this, "Club seleccionado: " + ((Club) spnClubes.getSelectedItem ()).getNombre(), Toast.LENGTH_SHORT ).show ();
     }
 
     //----------------------------------------------------------------------------------------------
