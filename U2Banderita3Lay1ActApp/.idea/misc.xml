@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/kikin/AndroidStudioProjects/U2Banderita3Lay1ActApp/app/src/main/res/layout/activity_blanco.xml" value="0.3632246376811594" />
+        <entry key="..\:/Users/kikin/AndroidStudioProjects/U2Banderita3Lay1ActApp/app/src/main/res/layout/activity_main.xml" value="0.26856884057971014" />
+        <entry key="..\:/Users/kikin/AndroidStudioProjects/U2Banderita3Lay1ActApp/app/src/main/res/layout/activity_rojo.xml" value="0.3632246376811594" />
+        <entry key="..\:/Users/kikin/AndroidStudioProjects/U2Banderita3Lay1ActApp/app/src/main/res/layout/activity_roko.xml" value="1.319078947368421" />
+        <entry key="..\:/Users/kikin/AndroidStudioProjects/U2Banderita3Lay1ActApp/app/src/main/res/layout/activity_splash.xml" value="0.21920289855072464" />
+        <entry key="..\:/Users/kikin/AndroidStudioProjects/U2Banderita3Lay1ActApp/app/src/main/res/layout/activity_verde.xml" value="0.26856884057971014" />
+        <entry key="..\:/Users/kikin/AndroidStudioProjects/U2Banderita3Lay1ActApp/app/src/main/res/layout/layout_blanco.xml" value="0.3632246376811594" />
+        <entry key="..\:/Users/kikin/AndroidStudioProjects/U2Banderita3Lay1ActApp/app/src/main/res/layout/layout_rojo.xml" value="0.3632246376811594" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

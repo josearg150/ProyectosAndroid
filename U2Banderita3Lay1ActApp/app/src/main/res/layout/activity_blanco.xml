@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".VerdeActivity" >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@android:color/holo_green_dark"
-        android:orientation="vertical"></LinearLayout>
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/aguila_mexicana" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,19 +26,19 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnAcercaDe"
+            android:id="@+id/btnBlancoAtras"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="btnAcercaDeClick"
-            android:text="acerca de" />
+            android:onClick="btnProcesarClick"
+            android:text="ATRAS" />
 
         <Button
-            android:id="@+id/btnVerdeSiguiente"
+            android:id="@+id/btnBlancoSiguiente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="btnSiguienteClick"
-            android:text="siguiente" />
+            android:onClick="btnProcesarClick"
+            android:text="SIGUIENTE" />
     </LinearLayout>
 </LinearLayout>
