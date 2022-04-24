@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Documentos/AndroidEjercicios/U3AppUsandoWidgets/app/src/main/res/layout/activity_catalogo.xml" value="0.21" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3AppUsandoWidgets/app/src/main/res/layout/activity_catalogo_postres.xml" value="0.1" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3AppUsandoWidgets/app/src/main/res/layout/activity_grid_view.xml" value="0.25" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3AppUsandoWidgets/app/src/main/res/layout/activity_gridview_postres_detalle.xml" value="0.1" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3AppUsandoWidgets/app/src/main/res/layout/activity_lista.xml" value="0.18" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3AppUsandoWidgets/app/src/main/res/layout/activity_menu.xml" value="0.21" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3AppUsandoWidgets/app/src/main/res/layout/activity_ordenar.xml" value="0.18" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3AppUsandoWidgets/app/src/main/res/layout/activity_spinner_fila_imagen.xml" value="0.1" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3AppUsandoWidgets/app/src/main/res/layout/datos_activity.xml" value="0.1" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3AppUsandoWidgets/app/src/main/res/layout/gridview_item.xml" value="0.1" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3AppUsandoWidgets/app/src/main/res/layout/spinner_fila_imagen.xml" value="0.18" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3AppUsandoWidgets/app/src/main/res/layout/splash_activity.xml" value="0.14673913043478262" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

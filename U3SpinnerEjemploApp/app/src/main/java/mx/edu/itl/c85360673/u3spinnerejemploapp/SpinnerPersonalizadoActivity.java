@@ -28,6 +28,8 @@ public class SpinnerPersonalizadoActivity extends AppCompatActivity {
         // Inicializar el ArrayList de clubes
         inicializarClubes ();
 
+
+
         // Crear el adapter del tipo SpinnerClubesAdapter y establecer el layout con  setDropDownViewResource ()
         SpinnerClubesAdapter adaptador = new SpinnerClubesAdapter(this, clubes );
         adaptador.setDropDownViewResource ( android.R.layout.simple_spinner_dropdown_item );

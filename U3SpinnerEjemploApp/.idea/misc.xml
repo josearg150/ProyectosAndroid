@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Documentos/AndroidEjercicios/U3SpinnerEjemploApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3SpinnerEjemploApp/app/src/main/res/layout/activity_spinner_personalizado.xml" value="0.16927083333333334" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3SpinnerEjemploApp/app/src/main/res/layout/spinner_fila_imagen_texto.xml" value="0.1082427536231884" />
         <entry key="..\:/ProyectosAndroid/U3SpinnerEjemploApp/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/ProyectosAndroid/U3SpinnerEjemploApp/app/src/main/res/layout/activity_spinner_personalizado.xml" value="0.2" />
         <entry key="..\:/ProyectosAndroid/U3SpinnerEjemploApp/app/src/main/res/layout/activity_spinner_simple.xml" value="0.2" />
@@ -10,7 +13,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

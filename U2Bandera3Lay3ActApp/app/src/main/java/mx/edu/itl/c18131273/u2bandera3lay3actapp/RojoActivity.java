@@ -26,8 +26,7 @@ package mx.edu.itl.c18131273.u2bandera3lay3actapp;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import c18131273.u2bandera3lay3actapp.R;
-
+import mx.edu.itl.c18131273.U2Bandera3LayActApp.R;
 public class RojoActivity extends AppCompatActivity {
 
     @Override

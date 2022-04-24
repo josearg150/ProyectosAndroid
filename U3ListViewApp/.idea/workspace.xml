@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cbdfc93-4e5a-4d00-b8a2-cdf9261da7fd" name="Default Changelist" comment="" />
+    <list default="true" id="6cbdfc93-4e5a-4d00-b8a2-cdf9261da7fd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../U2Bandera3Lay3ActApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U2Bandera3Lay3ActApp/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2Bandera3Lay3ActApp/app/src/main/java/mx/edu/itl/c18131273/u2bandera3lay3actapp/BlancoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2Bandera3Lay3ActApp/app/src/main/java/mx/edu/itl/c18131273/u2bandera3lay3actapp/BlancoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2Bandera3Lay3ActApp/app/src/main/java/mx/edu/itl/c18131273/u2bandera3lay3actapp/RojoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2Bandera3Lay3ActApp/app/src/main/java/mx/edu/itl/c18131273/u2bandera3lay3actapp/RojoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2Bandera3Lay3ActApp/app/src/main/java/mx/edu/itl/c18131273/u2bandera3lay3actapp/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2Bandera3Lay3ActApp/app/src/main/java/mx/edu/itl/c18131273/u2bandera3lay3actapp/SplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2Bandera3Lay3ActApp/app/src/main/java/mx/edu/itl/c18131273/u2bandera3lay3actapp/VerdeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2Bandera3Lay3ActApp/app/src/main/java/mx/edu/itl/c18131273/u2bandera3lay3actapp/VerdeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U3MenusApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U3MenusApp/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +31,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/U3ListViewApp" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

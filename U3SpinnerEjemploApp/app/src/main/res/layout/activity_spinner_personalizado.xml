@@ -35,7 +35,7 @@
         android:layout_width="258dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:onClick="btnAceptarClick"
+        android:onClick="aceptarClick"
         android:text="Aceptar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

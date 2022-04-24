@@ -28,7 +28,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
-import c18131273.u2bandera3lay3actapp.R;
+import mx.edu.itl.c18131273.U2Bandera3LayActApp.R;
 
 public class SplashActivity extends AppCompatActivity {
 

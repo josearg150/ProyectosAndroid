@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Documentos/AndroidEjercicios/U3ListViewApp/U3ListViewApp/app/src/main/res/layout/activity_lista_con_checkboxes.xml" value="0.16927083333333334" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3ListViewApp/U3ListViewApp/app/src/main/res/layout/activity_lista_sencilla.xml" value="0.16927083333333334" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3ListViewApp/U3ListViewApp/app/src/main/res/layout/activity_lista_texto_imagen.xml" value="0.16927083333333334" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3ListViewApp/U3ListViewApp/app/src/main/res/layout/activity_main.xml" value="0.16927083333333334" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3ListViewApp/U3ListViewApp/app/src/main/res/layout/list_fila_sencilla.xml" value="0.16927083333333334" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3ListViewApp/U3ListViewApp/app/src/main/res/layout/list_fila_texto_imagen.xml" value="0.16927083333333334" />
         <entry key="..\:/ProyectosAndroid/U3ListViewApp/U3ListViewApp/app/src/main/res/layout/activity_lista_con_checkboxes.xml" value="0.2" />
       </map>
     </option>

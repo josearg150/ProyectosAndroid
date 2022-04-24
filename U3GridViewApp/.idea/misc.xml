@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Documentos/AndroidEjercicios/U3GridViewApp/app/src/main/res/layout/activity_grid_view.xml" value="0.1082427536231884" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3GridViewApp/app/src/main/res/layout/activity_grid_view_detalle.xml" value="0.1082427536231884" />
+        <entry key="..\:/Documentos/AndroidEjercicios/U3GridViewApp/app/src/main/res/layout/gridview_item_imagen.xml" value="0.1082427536231884" />
         <entry key="..\:/ProyectosAndroid/U3GridViewApp/app/src/main/res/layout/activity_grid_view.xml" value="0.2" />
         <entry key="..\:/ProyectosAndroid/U3GridViewApp/app/src/main/res/layout/activity_grid_view_detalle.xml" value="0.2" />
         <entry key="..\:/ProyectosAndroid/U3GridViewApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
