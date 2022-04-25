@@ -8,17 +8,17 @@
 :*
 :*                       descripcion breve de la clase (centrado)
 :*
-:*  Archivo     : nombreArchivo.java
-:*  Autor       : nombre completo del alumno(s)     numero(s) de control
-:*  Fecha       : dd/mmm/2022
+:*  Archivo     : OrdenarActivity.java
+:*  Autor       : Jose Angel rocha garcia    18131273
+:*  Fecha       : 25/ABR/2022
 :*  Compilador  : Android Studio Artic Fox 2020.3
-:*  Descripci�n : descripcion funcional m�s detallada de lo que hace esta clase
-:*                puede usar varios renglones
+:*  Descripci�n : Clase para mostrar el menu para ordenar el pedido
 :*  Ultima modif:
 :*  Fecha       Modific�             Motivo
 :*==========================================================================================
 :*  dd/mmm/aaaa Fultano de tal       Motivo de la modificacion, puede ser en mas de 1 renglon.
 :*------------------------------------------------------------------------------------------*/
+
 package mx.edu.itl.c18131273.u3appusandowidgets;
 
 import androidx.appcompat.app.AppCompatActivity;

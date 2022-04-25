@@ -8,12 +8,11 @@
 :*
 :*                       descripcion breve de la clase (centrado)
 :*
-:*  Archivo     : nombreArchivo.java
-:*  Autor       : nombre completo del alumno(s)     numero(s) de control
-:*  Fecha       : dd/mmm/2022
+:*  Archivo     : SpinnerAdapter.java
+:*  Autor       : Jose Angel rocha garcia    18131273
+:*  Fecha       : 25/ABR/2022
 :*  Compilador  : Android Studio Artic Fox 2020.3
-:*  Descripci�n : descripcion funcional m�s detallada de lo que hace esta clase
-:*                puede usar varios renglones
+:*  Descripci�n : Clase para crear un objeto Spinner adapter
 :*  Ultima modif:
 :*  Fecha       Modific�             Motivo
 :*==========================================================================================
