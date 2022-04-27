@@ -21,31 +21,46 @@
 
 package mx.edu.itl.c18131273.u3appusandowidgets;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
-
-import android.widget.Button;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
-public class OrdenarActivity extends AppCompatActivity {
-
+public class OrdenarActivity extends AppCompatActivity{
+    EditText domicilio;
+    EditText nombre;
+    TextView etiquetaPrecio;
     private Spinner spnPostres;
     private Spinner spnPostres1;
     private Spinner spnPostres2;
     private ArrayList<Postre> postres;
     private ArrayList<Postre> miniPostres;
+    int precioPastel;
+    int precioPostre1;
+    int precioPostre2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ordenar);
-
+        precioPastel = 0;
+        precioPostre1 = 0;
+        precioPostre2 = 0;
         spnPostres = findViewById(R.id.spnPostre);
         spnPostres1 = findViewById(R.id.spnMiniPostre1);
         spnPostres2 = findViewById(R.id.spnMiniPostre2);
+        domicilio = (EditText) findViewById(R.id.editTextDomicilio);
+        nombre = (EditText) findViewById(R.id.EditTextNombreC);
+        TextView etiquetaPrecio = (TextView) findViewById(R.id.txtPrecio);
         inicializarPostres();
         inicializarMinipostres();
 
@@ -61,6 +76,43 @@ public class OrdenarActivity extends AppCompatActivity {
         spnPostres.setAdapter(adaptador);
         spnPostres1.setAdapter(adaptador1);
         spnPostres2.setAdapter(adaptador2);
+
+
+        precioPastel = ((Postre) spnPostres.getSelectedItem()).getPrecio();
+        precioPostre1 = ((Postre) spnPostres1.getSelectedItem()).getPrecio();
+        precioPostre2 = ((Postre) spnPostres2.getSelectedItem()).getPrecio();
+        etiquetaPrecio.setText("Precio: "+(precioPastel+precioPostre1+precioPostre2));
+
+        spnPostres.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                precioPastel = ((Postre) spnPostres.getSelectedItem()).getPrecio();
+                etiquetaPrecio.setText("Precio: "+(precioPastel+precioPostre1+precioPostre2));
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
+        spnPostres1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                precioPostre1 = ((Postre) spnPostres1.getSelectedItem()).getPrecio();
+                etiquetaPrecio.setText("Precio: "+(precioPastel+precioPostre1+precioPostre2));
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
+        spnPostres2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                precioPostre2 = ((Postre) spnPostres2.getSelectedItem()).getPrecio();
+                etiquetaPrecio.setText("Precio: "+(precioPastel+precioPostre1+precioPostre2));
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
 
     }
 
@@ -88,14 +140,20 @@ public class OrdenarActivity extends AppCompatActivity {
         miniPostres.add(new Postre("Chesse cookies", R.drawable.chessecookies, 35));
     }
 
-    public void btnConfirmar(){
-        int precioPastel = ((Postre) spnPostres.getSelectedItem()).getPrecio();
-        int precioPostre1 = ((Postre) spnPostres1.getSelectedItem()).getPrecio();
-        int precioPostre2 = ((Postre) spnPostres2.getSelectedItem()).getPrecio();
+    public void btnConfirmar(View v){
         int precioTotal = precioPastel+precioPostre1+precioPostre2;
-
-        TextView precio = findViewById(R.id.txtPrecio);
-        precio.setText(precioTotal);
-
+        AlertDialog.Builder builder = new AlertDialog.Builder(OrdenarActivity.this);
+        builder.setTitle("Pedido confirmado").
+                setMessage(
+                "Tu pedido para "+nombre.getText() +" tiene un costo de "+precioTotal+
+                " y llegara a "+domicilio.getText())
+                .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                })
+                .create()
+                .show();
     }
 }
