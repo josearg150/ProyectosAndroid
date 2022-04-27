@@ -77,7 +77,7 @@ public class OrdenarActivity extends AppCompatActivity {
         postres.add(new Postre("Ponche ruso", R.drawable.ponche,220));
     }
 
-    private void inicializarMinipostres() {
+    public void inicializarMinipostres() {
         miniPostres = new ArrayList<>();
         // Agregar elementos al ArrayList
         miniPostres.add(new Postre("Gelatina roja", R.drawable.gelatinaroja,23));

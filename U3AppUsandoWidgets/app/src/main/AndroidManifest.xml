@@ -21,6 +21,8 @@
         <activity
             android:name=".CatalogoActivity"
             android:exported="false" />
+        <activity android:name=".acercaDe"
+            android:exported="false"/>
         <activity
             android:name=".MenuActivity"
             android:exported="false" />

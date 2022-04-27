@@ -48,4 +48,8 @@ public class MenuActivity extends AppCompatActivity {
         startActivity ( intent );
     }
 
+    public void btnAcercaDe ( View v ) {
+        Intent intent  = new Intent ( this, acercaDe.class );
+        startActivity ( intent );
+    }
 }
