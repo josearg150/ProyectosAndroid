@@ -25,9 +25,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Toast;
 
-public class MenuActivity extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +52,20 @@ public class MenuActivity extends AppCompatActivity {
         startActivity ( intent );
     }
 
-    public void btnAcercaDe ( View v ) {
-        Intent intent  = new Intent ( this, acercaDe.class );
-        startActivity ( intent );
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate ( R.menu.menu_comun, menu );
+        return super.onCreateOptionsMenu(menu);
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch ( id ) {
+            case R.id.mniAcercaDe : Intent intent  = new Intent ( this, acercaDe.class );
+                startActivity ( intent );break;
+            default               : return super.onOptionsItemSelected(item);
+        }
+        return true;
+    }
+
 }

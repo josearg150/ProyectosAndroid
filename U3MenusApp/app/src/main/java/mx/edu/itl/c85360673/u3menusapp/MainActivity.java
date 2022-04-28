@@ -17,7 +17,7 @@ import mx.edu.itl.c85360673.util.OcultarTecladoAdaptador;
 public class MainActivity extends AppCompatActivity {
 
     LinearLayout layout;
-    EditText     edtNombre;
+    EditText edtNombre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
