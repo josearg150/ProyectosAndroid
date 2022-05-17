@@ -41,6 +41,7 @@ public class VideoActivity extends AppCompatActivity {
             public void onPrepared(MediaPlayer mp) {
                 mp.setLooping(false);
                 videoView.requestFocus();
+                progressDialog.dismiss();
                 videoView.start();
             }
         });

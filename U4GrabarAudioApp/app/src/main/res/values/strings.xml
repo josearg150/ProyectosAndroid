@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">U4GrabarAudioApp</string>
+    <!--strings acerca de -->
+    <string name="campus">CAMPUS LA LAGUNA</string>
+    <string name="carrera">Ingeniería en Sistemas Computacionales</string>
+    <string name="materia">Desarrollo en Adroid</string>
+    <string name="semestre">Semestre: Ene-Jun/2022</string>
+    <string name="grupo">Grupo A 10-11Hrs</string>
+    <string name="leyenda_alumno">Alumno:</string>
+    <string name="alumno_nombre">Jose Angel Rocha Garcia(18131273)</string>
+    <string name="derechos_reservados">(C) Derechos Reservados. Torreón, Coah. México 2022</string>
+    <string name="institucion">Instituto tecnologico nacional de mexico</string>
+</resources>
