@@ -10,15 +10,17 @@ import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-import mx.edu.itl.c18131252.androlib.util.permisos.ChecadorDePermisos;
-import mx.edu.itl.c18131252.androlib.util.permisos.PermisoApp;
+
+import mx.edu.itl.c18131273.androidlib.util.permisos.ChecadorDePermisos;
+import mx.edu.itl.c18131273.androidlib.util.permisos.PermisoApp;
+
 
 public class MainActivity extends AppCompatActivity {
     private EditText      edtTelefonoDestino;
     private EditText      edtMensaje;
 
     private PermisoApp[] permisosReq = new PermisoApp [] {
-            new PermisoApp ( Manifest.permission.SEND_SMS, "SMS", true ),
+            new PermisoApp( Manifest.permission.SEND_SMS, "SMS", true ),
             new PermisoApp ( Manifest.permission.CALL_PHONE, "Telefono", false ),
             new PermisoApp ( Manifest.permission.READ_EXTERNAL_STORAGE, "Almacenamiento", false )
     };
@@ -39,8 +41,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(
             int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults ) {
-        if ( requestCode == ChecadorDePermisos.CODIGO_PEDIR_PERMISOS ) {
-            ChecadorDePermisos.verificarPermisosSolicitados ( this, permisosReq, permissions, grantResults );
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == ChecadorDePermisos.CODIGO_PEDIR_PERMISOS) {
+            ChecadorDePermisos.verificarPermisosSolicitados(this, permisosReq, permissions, grantResults);
         }
 
     }
