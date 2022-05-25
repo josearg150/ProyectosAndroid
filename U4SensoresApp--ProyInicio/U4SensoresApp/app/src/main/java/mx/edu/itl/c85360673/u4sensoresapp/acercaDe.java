@@ -6,9 +6,9 @@
 :*
 :*                   SEMESTRE: ENE-JUN/2022    HORA: 10-11 HRS
 :*
-:*                       Acerca de de la aplicacion SmsPermisosApp
+:*                       Aplicacion para calcular el imc
 :*
-:*  Archivo     : acercaDe.java
+:*  Archivo     : SplashActivity.java
 :*  Autor       : jose angel rocha garcia 18131273
 :*  Fecha       : 16/03/2022
 :*  Compilador  : Android Studio bumblebee 2021.1.1
@@ -19,7 +19,7 @@
 :*
 :*------------------------------------------------------------------------------------------*/
 
-package mx.edu.itl.c85360673.u4smsenvioapp;
+package mx.edu.itl.c85360673.u4sensoresapp;
 
 import android.os.Bundle;
 
