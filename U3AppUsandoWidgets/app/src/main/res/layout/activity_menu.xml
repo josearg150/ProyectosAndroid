@@ -12,7 +12,7 @@
         android:layout_width="175dp"
         android:layout_height="157dp"
         android:layout_marginStart="4dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="196dp"
         android:background="#FFFFFF"
         android:backgroundTint="#FFFFFF"
         android:onClick="btnCatalogoClic"
@@ -28,7 +28,7 @@
         android:id="@+id/btnOrdenar"
         android:layout_width="389dp"
         android:layout_height="85dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="96dp"
         android:background="#FFFFFF"
         android:backgroundTint="#FFFFFF"
         android:onClick="btnOrdenarClic"
@@ -39,6 +39,24 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPedidos"
+        android:layout_width="389dp"
+        android:layout_height="85dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="btnPedidos"
+        android:text="Pedidos guardados"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -46,7 +64,7 @@
         android:layout_width="175dp"
         android:layout_height="157dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="196dp"
         android:background="#FFFFFF"
         android:backgroundTint="#FFFFFF"
         android:onClick="btnCatalogoPostresClic"
@@ -61,7 +79,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="433dp"
-        android:layout_height="424dp"
+        android:layout_height="370dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

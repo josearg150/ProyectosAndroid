@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.U3AppUsandoWidgets">
         <activity
+            android:name=".activity_pedidos"
+            android:exported="false" />
+        <activity
             android:name=".OrdenarActivity"
             android:exported="false" />
         <activity
@@ -21,8 +24,9 @@
         <activity
             android:name=".CatalogoActivity"
             android:exported="false" />
-        <activity android:name=".acercaDe"
-            android:exported="false"/>
+        <activity
+            android:name=".acercaDe"
+            android:exported="false" />
         <activity
             android:name=".MenuActivity"
             android:exported="false" />

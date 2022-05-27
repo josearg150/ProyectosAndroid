@@ -52,6 +52,11 @@ public class MenuActivity extends AppCompatActivity  {
         startActivity ( intent );
     }
 
+    public void btnPedidos(View v){
+        Intent intent  = new Intent ( this, activity_pedidos.class );
+        startActivity ( intent );
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate ( R.menu.menu_comun, menu );

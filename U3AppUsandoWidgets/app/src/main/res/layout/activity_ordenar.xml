@@ -11,11 +11,13 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:text="Pastel a ordenar"
         android:textColor="#000000"
-        android:textSize="48sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,11 +25,11 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="148dp"
         android:text="Postre 1"
         android:textColor="#000000"
-        android:textSize="48sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,11 +38,11 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="316dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="268dp"
         android:text="Postre 2"
         android:textColor="#000000"
-        android:textSize="48sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -49,8 +51,8 @@
         android:id="@+id/txtPrecio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="468dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="420dp"
         android:text="Precio"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -60,15 +62,26 @@
 
     <Button
         android:id="@+id/btnConfirmarOrden"
-        android:layout_width="360dp"
-        android:layout_height="71dp"
-        android:text="Confirmar orden"
+        android:layout_width="178dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="24dp"
         android:onClick="btnConfirmar"
-        android:textSize="24sp"
+        android:text="Confirmar orden"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnGuardarPedido"
+        android:layout_width="196dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="btnConfirmar"
+        android:text="GUARDAR PEDIDO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
@@ -93,7 +106,7 @@
         android:id="@+id/spnMiniPostre2"
         android:layout_width="379dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -108,8 +121,8 @@
         android:textColorHint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/btnConfirmarOrden"
         app:layout_constraintTop_toBottomOf="@+id/txtPrecio"
-        app:layout_constraintVertical_bias="0.541"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.105"
+        tools:layout_editor_absoluteX="50dp" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/EditTextNombreC"
