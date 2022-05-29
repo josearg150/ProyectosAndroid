@@ -24,7 +24,9 @@ package mx.edu.itl.c18131273.u3appusandowidgets;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.DialogInterface;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -38,6 +40,7 @@ import java.util.ArrayList;
 public class OrdenarActivity extends AppCompatActivity{
     EditText domicilio;
     EditText nombre;
+    EditText codigoPedido;
     TextView etiquetaPrecio;
     private Spinner spnPostres;
     private Spinner spnPostres1;
@@ -60,6 +63,7 @@ public class OrdenarActivity extends AppCompatActivity{
         spnPostres2 = findViewById(R.id.spnMiniPostre2);
         domicilio = (EditText) findViewById(R.id.editTextDomicilio);
         nombre = (EditText) findViewById(R.id.EditTextNombreC);
+        codigoPedido = (EditText) findViewById(R.id.editTextCodigo);
         TextView etiquetaPrecio = (TextView) findViewById(R.id.txtPrecio);
         inicializarPostres();
         inicializarMinipostres();
@@ -155,5 +159,60 @@ public class OrdenarActivity extends AppCompatActivity{
                 })
                 .create()
                 .show();
+    }
+
+    public void btnGuardar(View v){
+        if(domicilio.getText().toString().isEmpty() || nombre.getText().toString().isEmpty()
+        || codigoPedido.getText().toString().isEmpty()){
+            AlertDialog.Builder builder = new AlertDialog.Builder(OrdenarActivity.this);
+            builder.setTitle("Datos de envio vacios").
+                    setMessage("Favor de llenar todos los campos")
+                    .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.dismiss();
+                        }
+                    })
+                    .create()
+                    .show();
+        }else {
+            AdminSQLiteOpenHelper openHelp = new AdminSQLiteOpenHelper(this, "pasteleriaTec", null, 1);
+            SQLiteDatabase baseDeDatos = openHelp.getReadableDatabase();
+            int numPedido = Integer.parseInt(codigoPedido.getText().toString());
+            String pastel = ((Postre) spnPostres.getSelectedItem()).getNombre();
+            String postre1 = ((Postre) spnPostres1.getSelectedItem()).getNombre();
+            String postre2 = ((Postre) spnPostres2.getSelectedItem()).getNombre();
+            String dom = domicilio.getText().toString();
+            String nom = nombre.getText().toString();
+            int precioF = precioPastel+precioPostre1+precioPostre2;
+
+            //Guardar datos
+            ContentValues registro = new ContentValues();
+            registro.put("num_pedido",numPedido);
+            registro.put("pastel",pastel);
+            registro.put("precio_pastel",precioPastel);
+            registro.put("postre1",postre1);
+            registro.put("precio_postre1",precioPostre1);
+            registro.put("postre2",postre2);
+            registro.put("precio_postre2",precioPostre2);
+            registro.put("domicilio",dom);
+            registro.put("nombre",nom);
+            registro.put("precioFinal",precioF);
+            baseDeDatos.insert("pedidosGuardados",null,registro);
+            //Cerrar base
+            baseDeDatos.close();
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(OrdenarActivity.this);
+            builder.setTitle("Pedido Guardado").
+                    setMessage("Pedido guardado con exito")
+                    .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.dismiss();
+                        }
+                    })
+                    .create()
+                    .show();
+        }
     }
 }

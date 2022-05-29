@@ -26,47 +26,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="24dp"
         android:text="Postre 1"
         android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/spnPostre" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="268dp"
         android:text="Postre 2"
         android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/spnMiniPostre1" />
 
     <TextView
         android:id="@+id/txtPrecio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="420dp"
         android:text="Precio"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/spnMiniPostre2" />
 
     <Button
         android:id="@+id/btnConfirmarOrden"
-        android:layout_width="178dp"
-        android:layout_height="76dp"
+        android:layout_width="168dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="4dp"
         android:layout_marginBottom="24dp"
         android:onClick="btnConfirmar"
-        android:text="Confirmar orden"
+        android:text="CONFIRMAR"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,11 +73,11 @@
 
     <Button
         android:id="@+id/btnGuardarPedido"
-        android:layout_width="196dp"
-        android:layout_height="78dp"
+        android:layout_width="156dp"
+        android:layout_height="49dp"
         android:layout_marginBottom="24dp"
-        android:onClick="btnConfirmar"
-        android:text="GUARDAR PEDIDO"
+        android:onClick="btnGuardar"
+        android:text="GUARDAR"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -106,32 +105,48 @@
         android:id="@+id/spnMiniPostre2"
         android:layout_width="379dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextDomicilio"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="32dp"
         android:hint="Domicilio"
         android:textColor="#000000"
         android:textColorHint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/btnConfirmarOrden"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPrecio"
-        app:layout_constraintVertical_bias="0.105"
-        tools:layout_editor_absoluteX="50dp" />
+        app:layout_constraintVertical_bias="0.106" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextCodigo"
+        android:layout_width="210dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Codigo del pedido"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnConfirmarOrden"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/EditTextNombreC"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDomicilio"
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/EditTextNombreC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nombre completo"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:hint="Nombre"
         android:textColor="#000000"
         android:textColorHint="#000000"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDomicilio"
-        tools:layout_editor_absoluteX="-16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDomicilio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

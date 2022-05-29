@@ -7,4 +7,32 @@
     android:background="#FFFFFF"
     tools:context=".activity_pedidos">
 
+    <Button
+        android:id="@+id/btnVerPedidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="verPedidos"
+        android:text="Ver pedido guardado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPedido"
+        android:layout_width="379dp"
+        android:layout_height="239dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="23dp" />
+
+    <EditText
+        android:id="@+id/editTextCodigoBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Codigo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerPedidos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
