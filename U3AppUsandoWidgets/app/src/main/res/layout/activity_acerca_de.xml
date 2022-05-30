@@ -109,7 +109,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="App usando widgets"
+            android:text="App usando SQLite"
             android:textAlignment="center"
             android:textColor="@color/design_default_color_primary_dark"
             android:textSize="30sp"

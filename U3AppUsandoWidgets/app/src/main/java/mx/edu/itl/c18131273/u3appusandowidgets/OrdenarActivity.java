@@ -12,11 +12,13 @@
 :*  Autor       : Jose Angel rocha garcia    18131273
 :*  Fecha       : 25/ABR/2022
 :*  Compilador  : Android Studio Artic Fox 2020.3
-:*  Descripci�n : Clase para mostrar el menu para ordenar el pedido
+:*  Descripci�n : Clase para mostrar el menu para ordenar y guardar el pedido
 :*  Ultima modif:
 :*  Fecha       Modific�             Motivo
 :*==========================================================================================
 :*  dd/mmm/aaaa Fultano de tal       Motivo de la modificacion, puede ser en mas de 1 renglon.
+    29/05/2022 jose angel rocha garcia, se agrega apartado para guardar el pedido y para registrar
+    el codigo
 :*------------------------------------------------------------------------------------------*/
 
 package mx.edu.itl.c18131273.u3appusandowidgets;
@@ -24,16 +26,13 @@ package mx.edu.itl.c18131273.u3appusandowidgets;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ContentValues;
 import android.content.DialogInterface;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -176,31 +175,17 @@ public class OrdenarActivity extends AppCompatActivity{
                     .create()
                     .show();
         }else {
-            AdminSQLiteOpenHelper openHelp = new AdminSQLiteOpenHelper(this, "pasteleriaTec", null, 1);
-            SQLiteDatabase baseDeDatos = openHelp.getReadableDatabase();
+            AdminSQLiteOpenHelper baseDeDatos = new AdminSQLiteOpenHelper(this);
             int numPedido = Integer.parseInt(codigoPedido.getText().toString());
             String pastel = ((Postre) spnPostres.getSelectedItem()).getNombre();
             String postre1 = ((Postre) spnPostres1.getSelectedItem()).getNombre();
             String postre2 = ((Postre) spnPostres2.getSelectedItem()).getNombre();
             String dom = domicilio.getText().toString();
             String nom = nombre.getText().toString();
-            int precioF = precioPastel+precioPostre1+precioPostre2;
+            int precioF = precioPastel + precioPostre1 + precioPostre2;
 
-            //Guardar datos
-            ContentValues registro = new ContentValues();
-            registro.put("num_pedido",numPedido);
-            registro.put("pastel",pastel);
-            registro.put("precio_pastel",precioPastel);
-            registro.put("postre1",postre1);
-            registro.put("precio_postre1",precioPostre1);
-            registro.put("postre2",postre2);
-            registro.put("precio_postre2",precioPostre2);
-            registro.put("domicilio",dom);
-            registro.put("nombre",nom);
-            registro.put("precioFinal",precioF);
-            baseDeDatos.insert("pedidosGuardados",null,registro);
-            //Cerrar base
-            baseDeDatos.close();
+            baseDeDatos.guardarRegistro(numPedido,pastel,precioPastel,postre1,precioPostre1,
+                        postre2,precioPostre2,dom,nom,precioF);
 
             AlertDialog.Builder builder = new AlertDialog.Builder(OrdenarActivity.this);
             builder.setTitle("Pedido Guardado").

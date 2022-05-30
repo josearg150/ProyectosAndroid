@@ -11,8 +11,19 @@
         android:id="@+id/btnVerPedidos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:onClick="verPedidos"
         android:text="Ver pedido guardado"
+        app:layout_constraintBottom_toTopOf="@+id/btnConfirmar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:onClick="entregarPedido"
+        android:text="Confirmar pedido"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -20,8 +31,10 @@
     <TextView
         android:id="@+id/textViewPedido"
         android:layout_width="379dp"
-        android:layout_height="239dp"
-        android:text="TextView"
+        android:layout_height="500dp"
+        android:text="Pasteleria tec"
+        android:textSize="20sp"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="12dp"
         tools:layout_editor_absoluteY="23dp" />
 
@@ -29,10 +42,24 @@
         android:id="@+id/editTextCodigoBuscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="Codigo"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/btnVerPedidos"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:onClick="eliminarTodo"
+        android:text="Eliminar pedidos"
+        app:layout_constraintBottom_toTopOf="@+id/btnConfirmar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toEndOf="@+id/btnVerPedidos" />
 </androidx.constraintlayout.widget.ConstraintLayout>
